@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Etiquetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Etiquetas</h1>
+        <form id="labelForm">
+            <label for="tipoPostal">Tipo Postal:</label>
+            <input type="text" id="tipoPostal" value="AB"><br><br>
+
+            <label for="nuEtiquetaInicial">Número da Etiqueta Inicial:</label>
+            <input type="text" id="nuEtiquetaInicial" value="03223385"><br><br>
+
+            <label for="nuEtiquetaFinal">Número da Etiqueta Final:</label>
+            <input type="text" id="nuEtiquetaFinal" value="03223484"><br><br>
+
+            <button type="button" onclick="generateLabels()">Gerar Etiquetas</button>
+        </form>
+        <br>
+        <button type="button" onclick="exportCSV()">Exportar para CSV</button>
+        <pre id="output"></pre>
+        <button type="button" onclick="scrollToTop()" id="scrollButton">Topo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
